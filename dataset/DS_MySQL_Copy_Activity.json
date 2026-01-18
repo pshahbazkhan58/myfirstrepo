@@ -1,0 +1,20 @@
+{
+	"name": "DS_MySQL_Copy_Activity",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_MySql",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"database": "adventureworksdb"
+			}
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "MySqlTable",
+		"schema": []
+	}
+}

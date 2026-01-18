@@ -1,0 +1,15 @@
+{
+	"name": "DS_MySQL_Lookup",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_MySql",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"database": "adventureworksdb"
+			}
+		},
+		"annotations": [],
+		"type": "MySqlTable",
+		"schema": []
+	}
+}
