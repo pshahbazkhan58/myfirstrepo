@@ -1,0 +1,35 @@
+{
+	"name": "LS_MySql",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"database": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "MySql",
+		"typeProperties": {
+			"server": "localhost",
+			"port": 3306,
+			"database": "@{linkedService().database}",
+			"username": "root",
+			"sslMode": 1,
+			"useSystemTrustStore": 0,
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_Key_Vault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "Mysql",
+				"secretVersion": "bb3fa7ff392c48e896a0633f6b61b19b"
+			},
+			"driverVersion": "v2"
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

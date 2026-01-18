@@ -1,0 +1,12 @@
+{
+	"name": "LS_Key_Vault",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "This connects with system-assigned managed identity",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kv-adf-dev-kpi.vault.azure.net/"
+		}
+	}
+}

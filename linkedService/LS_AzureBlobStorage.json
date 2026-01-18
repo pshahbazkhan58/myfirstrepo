@@ -1,0 +1,20 @@
+{
+	"name": "LS_AzureBlobStorage",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "This connects to Azure Blob Storage",
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_Key_Vault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "stblobaccconnstring",
+				"secretVersion": "8bbb8fc24a434bcfbcf1cf791c136ea2"
+			}
+		}
+	}
+}

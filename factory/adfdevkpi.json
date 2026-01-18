@@ -1,0 +1,15 @@
+{
+	"name": "adfdevkpi",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "d7ce700a-2541-4106-ba17-b5b85e45feef",
+		"tenantId": "06804122-d25d-4a2b-b6af-7b1ad0fef03b",
+		"userAssignedIdentities": {
+			"/subscriptions/a3009cab-57f5-4e3f-8d1e-a1999ae1e666/resourcegroups/rg-kpidashbording/providers/Microsoft.ManagedIdentity/userAssignedIdentities/mi-rg-kpi-dashboarding": {
+				"clientId": "b4017d02-aa31-4c72-bf13-28b003857514",
+				"principalId": "addc071b-6a90-439d-90f9-9c981335d33e"
+			}
+		}
+	}
+}

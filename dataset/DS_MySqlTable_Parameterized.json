@@ -1,0 +1,27 @@
+{
+	"name": "DS_MySqlTable_Parameterized",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_MySql",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"database": "adventureworksdb"
+			}
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "MySqlTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": {
+				"value": "@dataset().tablename",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
